@@ -19,17 +19,6 @@
             overflow: hidden;
         }
 
-        video {
-            position: absolute;
-            top: 0;
-            left: 0;
-            min-width: 100%;
-            min-height: 100%;
-            z-index: -1;
-            object-fit: cover;
-            filter: brightness(0.6); /* optional: to make the text stand out */
-        }
-
         .student-info {
             background: white;
             border-radius: 10px;
@@ -98,25 +87,13 @@
 </head>
 <body>
 
-    <video id="bgVideo" autoplay muted loop>
-        <source src="D:\4kdownload\Videos\Malee dance.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
 
     <div class="student-info">
         <h2>ข้อมูลนักเรียน</h2>
         <p><strong>ชื่อ:</strong> นพกร สุรินทร์</p>
         <p><strong>ชื่อเล่น:</strong> ปิง</p>
-        <button onclick="unmuteVideo()">Enable Sound</button>
     </div>
 
-    <script>
-        function unmuteVideo() {
-            const video = document.getElementById('bgVideo');
-            video.muted = false;  // Unmute the video
-            video.play();  // Ensure the video continues to play
-        }
-    </script>
 
 </body>
 </html>
