@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ข้อมูลนักศึกษา</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f4f8; 
+            background-image: url('https://assets.beartai.com/uploads/2019/01/Untitled-1-1.jpg'); 
+            background-size: cover; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.9); 
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #34495e;
+            margin: 10px 0;
+        }
+
+        .student-info p {
+            margin: 5px 0;
+            color: #7f8c8d;
+        }
+
+        .student-info p strong {
+            color: #2c3e50;
+        }
+
+        .profile-image {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+            border: 3px solid #2c3e50;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            transition: transform 0.3s;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <img src="ImagePK/PKimage.jpg" alt="Profile Image" class="profile-image">
+        <h1>ข้อมูลนักศึกษา</h1>
+        <div class="student-info">
+            <h2>ชื่อ: ภัทรกฤต ชนะพิมพ์</h2>
+            <p><strong>ชื่อเล่น:</strong> แชมป์</p>
+            <p><strong>อายุ:</strong> 22 ปี</p>
+            <p><strong>งานอดิเรก:</strong> เล่นกีฬา, อ่านหนังสือ, เล่นเกม</p>
+            <p><strong>สถาบันการศึกษา:</strong> มหาวิทยาลัยเทคโนโลยีราชมงคลล้านนา</p>
+        </div>
+    </div>
+
+</body>
+</html>
