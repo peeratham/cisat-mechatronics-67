@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noppakron Surin</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ecf0f1;
+            color: #2c3e50;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .student-info {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            text-align: center;
+            max-width: 400px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            z-index: 1; /* To ensure the info is above the video */
+        }
+
+        .student-info:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            color: #3498db;
+            margin-bottom: 20px;
+            font-size: 24px;
+            letter-spacing: 1px;
+        }
+
+        .student-info p {
+            margin: 15px 0;
+            font-size: 20px;
+            line-height: 1.6;
+        }
+
+        strong {
+            color: #3498db;
+            font-weight: bold;
+        }
+
+        button {
+            position: relative;
+            z-index: 2;
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+        }
+
+        @media (max-width: 600px) {
+            .student-info {
+                padding: 20px;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
+
+            .student-info p {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+
+    <div class="student-info">
+        <h2>ข้อมูลนักเรียน</h2>
+        <p><strong>ชื่อ:</strong> นพกร สุรินทร์</p>
+        <p><strong>ชื่อเล่น:</strong> ปิง</p>
+    </div>
+
+
+</body>
+</html>
